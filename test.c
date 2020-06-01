@@ -18,4 +18,6 @@ void print_uart0(const char *s) {
   }
 }
 
-void c_entry() { print_uart0("Hello world\n"); }
+void c_entry() {
+  print_uart0("Hello world\n\tPress 'ctrl-a' followed by 'x' to stop qemu\n");
+}
